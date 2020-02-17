@@ -36,4 +36,10 @@ public class HomeController {
 		return "home";
 	}
 	
+//	@RequestMapping(value="/home.jsp")
+//	public String home_2() {
+//		
+//		return "home";
+//	}
+	
 }

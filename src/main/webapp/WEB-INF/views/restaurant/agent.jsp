@@ -1,5 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    
+<%@ page session="false"%>
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,179 +37,132 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Uptown</a>
+	      <a class="navbar-brand" href="first_view.do">Uptown</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item active"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="agent.html" class="nav-link">Agent</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="properties.html" class="nav-link">Properties</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="first_view.do" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.do" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="agent.do" class="nav-link">Agent</a></li>
+	          <li class="nav-item"><a href="services.do" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="properties.do" class="nav-link">Properties</a></li>
+	          <li class="nav-item"><a href="blog.do" class="nav-link">blog</a></li>
+	          <li class="nav-item"><a href="contact.do" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2 ftco-degree-bg js-fullheight" style="background-image: url('resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2 ftco-degree-bg js-fullheight" style="background-image: url('${ pageContext.request.contextPath }/resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p>
-            <h1 class="mb-3 bread">About Us</h1>
+          	<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>Agent <i class="ion-ios-arrow-forward"></i></span></p>
+            <h1 class="mb-3 bread">Agent</h1>
           </div>
         </div>
       </div>
     </section>
 
-		<section class="ftco-section ftco-no-pb">
-			<div class="container">
-				<div class="row no-gutters">
-					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(resources/images/about.jpg);">
-					</div>
-					<div class="col-md-6 wrap-about py-md-5 ftco-animate">
-	          <div class="heading-section p-md-5">
-	            <h2 class="mb-4">We Put People First.</h2>
-
-	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
-	          </div>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<section class="ftco-counter img" id="section-counter">
+		<section class="ftco-section ftco-agent">
     	<div class="container">
-    		<div class="row">
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="305">0</strong>
-                <span>Area <br>Population</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="1090">0</strong>
-                <span>Total <br>Properties</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text text-border d-flex align-items-center">
-                <strong class="number" data-number="209">0</strong>
-                <span>Average <br>House</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text d-flex align-items-center">
-                <strong class="number" data-number="67">0</strong>
-                <span>Total <br>Branches</span>
-              </div>
-            </div>
-          </div>
+        <div class="row">
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-1.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-2.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-3.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-4.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="position">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-5.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-6.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-7.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="location">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
+        	<div class="col-md-3">
+        		<div class="agent">
+    					<div class="img">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-8.jpg" class="img-fluid" alt="Colorlib Template">
+	    				</div>
+	    				<div class="desc">
+	    					<h3><a href="properties.html">James Stallon</a></h3>
+								<p class="h-info"><span class="position">Listing</span> <span class="details">&mdash; 10 Properties</span></p>
+	    				</div>
+    				</div>
+        	</div>
         </div>
     	</div>
-    </section>
-
-    <section class="ftco-section testimony-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center heading-section ftco-animate">
-          	<span class="subheading">Testimonial</span>
-            <h2 class="mb-3">Happy Clients</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_3.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <footer class="ftco-footer ftco-section">

@@ -1,7 +1,9 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ page session="false"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+<%@ page session="false"%>
+    
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,27 +37,27 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="home.jsp">Uptown</a>
+	      <a class="navbar-brand" href="first_view.do">Uptown</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="home.jsp" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="${ pageContext.request.contextPath }/resources/html/about.jsp" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="${ pageContext.request.contextPath }/resources/html/agent.html" class="nav-link">Agent</a></li>
-	          <li class="nav-item"><a href="${ pageContext.request.contextPath }/resources/html/services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="${ pageContext.request.contextPath }/resources/html/properties.html" class="nav-link">Properties</a></li>
-	          <li class="nav-item"><a href="${ pageContext.request.contextPath }/resources/html/blog.html" class="nav-link">로그인</a></li>
-	          <li class="nav-item"><a href="${ pageContext.request.contextPath }/resources/html/contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="first_view.do" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.do" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="agent.do" class="nav-link">Agent</a></li>
+	          <li class="nav-item"><a href="services.do" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="properties.do" class="nav-link">Properties</a></li>
+	          <li class="nav-item"><a href="blog.do" class="nav-link">blog</a></li>
+	          <li class="nav-item"><a href="contact.do" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap ftco-degree-bg" style="background-image: url('resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap ftco-degree-bg" style="background-image: url('${ pageContext.request.contextPath }/resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text justify-content-center align-items-center">
@@ -146,7 +148,7 @@
         <div class="row">
         	<div class="col-md-4">
         		<div class="property-wrap ftco-animate">
-        			<a href="#" class="img" style="background-image: url(resources/images/work-1.jpg);"></a>
+        			<a href="#" class="img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/work-1.jpg);"></a>
         			<div class="text">
         				<p class="price"><span class="old-price">800,000</span><span class="orig-price">$3,050<small>/mo</small></span></p>
         				<ul class="property_list">
@@ -164,7 +166,7 @@
         	</div>
         	<div class="col-md-4">
         		<div class="property-wrap ftco-animate">
-        			<a href="#" class="img" style="background-image: url(resources/images/work-2.jpg);"></a>
+        			<a href="#" class="img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/work-2.jpg);"></a>
         			<div class="text">
         				<p class="price"><span class="old-price">800,000</span><span class="orig-price">$3,050<small>/mo</small></span></p>
         				<ul class="property_list">
@@ -182,7 +184,7 @@
         	</div>
         	<div class="col-md-4">
         		<div class="property-wrap ftco-animate">
-        			<a href="#" class="img" style="background-image: url(resources/images/work-3.jpg);"></a>
+        			<a href="#" class="img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/work-3.jpg);"></a>
         			<div class="text">
         				<p class="price"><span class="old-price">800,000</span><span class="orig-price">$3,050<small>/mo</small></span></p>
         				<ul class="property_list">
@@ -202,7 +204,7 @@
     	</div>
     </section>
 
-    <section class="ftco-section ftco-degree-bg services-section img mx-md-5" style="background-image: url(resources/images/bg_2.jpg);">
+    <section class="ftco-section ftco-degree-bg services-section img mx-md-5" style="background-image: url(${ pageContext.request.contextPath }/resources/images/bg_2.jpg);">
     	<div class="overlay"></div>
     	<div class="container">
     		<div class="row justify-content-start mb-5">
@@ -259,7 +261,7 @@
     <section class="ftco-section ftco-no-pb">
 			<div class="container">
 				<div class="row no-gutters">
-					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(resources/images/about.jpg);">
+					<div class="col-md-6 p-md-5 img img-2 d-flex justify-content-center align-items-center" style="background-image: url(${ pageContext.request.contextPath }/resources/images/about.jpg);">
 					</div>
 					<div class="col-md-6 wrap-about py-md-5 ftco-animate">
 	          <div class="heading-section p-md-5">
@@ -328,7 +330,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_1.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -342,7 +344,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_2.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/person_2.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -356,7 +358,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_3.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/person_3.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -370,7 +372,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_1.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/person_1.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -384,7 +386,7 @@
                   <div class="text">
                     <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(resources/images/person_2.jpg)"></div>
+                    	<div class="user-img" style="background-image: url(${ pageContext.request.contextPath }/resources/images/person_2.jpg)"></div>
                     	<div class="pl-3">
 		                    <p class="name">Roger Scott</p>
 		                    <span class="position">Marketing Manager</span>
@@ -411,7 +413,7 @@
         	<div class="col-md-3 ftco-animate">
         		<div class="agent">
     					<div class="img">
-		    				<img src="resources/images/team-1.jpg" class="img-fluid" alt="Colorlib Template">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-1.jpg" class="img-fluid" alt="Colorlib Template">
 	    				</div>
 	    				<div class="desc">
 	    					<h3><a href="properties.html">James Stallon</a></h3>
@@ -422,7 +424,7 @@
         	<div class="col-md-3 ftco-animate">
         		<div class="agent">
     					<div class="img">
-		    				<img src="resources/images/team-2.jpg" class="img-fluid" alt="Colorlib Template">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-2.jpg" class="img-fluid" alt="Colorlib Template">
 	    				</div>
 	    				<div class="desc">
 	    					<h3><a href="properties.html">James Stallon</a></h3>
@@ -433,7 +435,7 @@
         	<div class="col-md-3 ftco-animate">
         		<div class="agent">
     					<div class="img">
-		    				<img src="resources/images/team-3.jpg" class="img-fluid" alt="Colorlib Template">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-3.jpg" class="img-fluid" alt="Colorlib Template">
 	    				</div>
 	    				<div class="desc">
 	    					<h3><a href="properties.html">James Stallon</a></h3>
@@ -444,7 +446,7 @@
         	<div class="col-md-3 ftco-animate">
         		<div class="agent">
     					<div class="img">
-		    				<img src="resources/images/team-4.jpg" class="img-fluid" alt="Colorlib Template">
+		    				<img src="${ pageContext.request.contextPath }/resources/images/team-4.jpg" class="img-fluid" alt="Colorlib Template">
 	    				</div>
 	    				<div class="desc">
 	    					<h3><a href="properties.html">James Stallon</a></h3>
@@ -475,7 +477,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('resources/images/image_1.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('${ pageContext.request.contextPath }/resources/images/image_1.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
@@ -490,7 +492,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('resources/images/image_2.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('${ pageContext.request.contextPath }/resources/images/image_2.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
@@ -505,7 +507,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('resources/images/image_3.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('${ pageContext.request.contextPath }/resources/images/image_3.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
@@ -520,7 +522,7 @@
                   <div><a href="#">Admin</a></div>
                   <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                 </div>
-                <a href="blog-single.html" class="block-20 img" style="background-image: url('resources/images/image_4.jpg');">
+                <a href="blog-single.html" class="block-20 img" style="background-image: url('${ pageContext.request.contextPath }/resources/images/image_4.jpg');">
 	              </a>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
               </div>
